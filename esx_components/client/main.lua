@@ -5,6 +5,7 @@ local weapons = {
     [GetHashKey('weapon_m9')] = { m9a3magazine = GetHashKey('COMPONENT_M9_CLIP_02') },
     [GetHashKey('weapon_m4a1fm')] = { m4a1barrel = GetHashKey('COMPONENT_M4A1FM_BARREL_01'), m4a1barrelv2 = GetHashKey('COMPONENT_M4A1FM_BARREL_02'), m4a1barrelv3 = GetHashKey('COMPONENT_M4A1FM_BARREL_03'), m4a1barrelv4 = GetHashKey('COMPONENT_M4A1FM_BARREL_04'), m4a1magazine = GetHashKey('COMPONENT_M4A1FM_CLIP_01'), m4a1magazinev2 = GetHashKey('COMPONENT_M4A1FM_CLIP_02'), m4a1magazinev3 = GetHashKey('COMPONENT_M4A1FM_CLIP_03'), m4a1magazinev4 = GetHashKey('COMPONENT_M4A1FM_CLIP_04'), m4a1flashlight = GetHashKey('COMPONENT_M4A1FM_FLSH_01'), m4a1flashlightv2 = GetHashKey('COMPONENT_M4A1FM_FLSH_02'), m4a1flashlightv3 = GetHashKey('COMPONENT_M4A1FM_FLSH_03'), m4a1flashlightv4 = GetHashKey('COMPONENT_M4A1FM_FLSH_04'), m4a1flashlightv5 = GetHashKey('COMPONENT_M4A1FM_FLSH_05'), m4a1flashlightv6 = GetHashKey('COMPONENT_M4A1FM_FLSH_06'), m4a1scope = GetHashKey('COMPONENT_M4A1FM_SCOPE_01'), m4a1scopev2 = GetHashKey('COMPONENT_M4A1FM_SCOPE_02'), m4a1scopev3 = GetHashKey('COMPONENT_M4A1FM_SCOPE_03'), m4a1scopev4 = GetHashKey('COMPONENT_M4A1FM_SCOPE_04') },
     [GetHashKey('weapon_glock')] = { g17magazine = GetHashKey('COMPONENT_GLOCK_CLIP_01'), g17magazinev2 = GetHashKey('COMPONENT_GLOCK_CLIP_02'), g17magazinev3 = GetHashKey('COMPONENT_GLOCK_CLIP_03'), g17magazinev4 = GetHashKey('COMPONENT_GLOCK_CLIP_04'), g17flashlight = GetHashKey('COMPONENT_GLOCK_FLSH_01'), g17flashlightv2 = GetHashKey('COMPONENT_GLOCK_FLSH_02'), g17flashlightv3 = GetHashKey('COMPONENT_GLOCK_FLSH_03'), g17flashlightv4 = GetHashKey('COMPONENT_GLOCK_FLSH_04'), g17slide = GetHashKey('COMPONENT_SLIDE_01'), g17slidev2 = GetHashKey('COMPONENT_SLIDE_02'), g17slidev3 = GetHashKey('COMPONENT_SLIDE_03'), g17slidev4 = GetHashKey('COMPONENT_SLIDE_04'), g17slidev5 = GetHashKey('COMPONENT_SLIDE_05'), g17slidev6 = GetHashKey('COMPONENT_SLIDE_06'), g17slidev7 = GetHashKey('COMPONENT_SLIDE_07'), g17slidev8 = GetHashKey('COMPONENT_SLIDE_08'), g17slidev9 = GetHashKey('COMPONENT_SLIDE_09'), g17suppressor = GetHashKey('COMPONENT_SUPP_01'), g17suppressorv2 = GetHashKey('COMPONENT_SUPP_02'), g17suppressorv3 = GetHashKey('COMPONENT_SUPP_03'), g17suppressorv4 = GetHashKey('COMPONENT_SUPP_04'), g17suppressorv5 = GetHashKey('COMPONENT_SUPP_05'), g17suppressorv6 = GetHashKey('COMPONENT_SUPP_06'), g17suppressorv7 = GetHashKey('COMPONENT_SUPP_07') }
+    [GetHashKey('weapon_m870')] = { r870barrel = GetHashKey('COMPONENT_m870_BARREL_01'), r870barrelv2 = GetHashKey('COMPONENT_m870_BARREL_02'), r870barrelv3 = GetHashKey('COMPONENT_m870_BARREL_03'), r870barrelv4 = GetHashKey('COMPONENT_m870_BARREL_04'), r870barrelv5 = GetHashKey('COMPONENT_m870_BARREL_05'), r870barrelv6 = GetHashKey('COMPONENT_m870_BARREL_06'), r870barrelv7 = GetHashKey('COMPONENT_m870_BARREL_07'), r870magazine = GetHashKey('COMPONENT_m870_CLIP_01'), r870magazinev2 = GetHashKey('COMPONENT_m870_CLIP_02'), r870magazinev3 = GetHashKey('COMPONENT_m870_CLIP_03'), r870handguard = GetHashKey('COMPONENT_m870_HANDGUARD_01'), r870handguardv2 = GetHashKey('COMPONENT_m870_HANDGUARD_02'), r870handguardv3 = GetHashKey('COMPONENT_m870_HANDGUARD_03'), r870scope = GetHashKey('COMPONENT_m870_SCOPE_01'), r870scopev2 = GetHashKey('COMPONENT_m870_SCOPE_02'), r870scopev3 = GetHashKey('COMPONENT_m870_SCOPE_03'), r870scopev4 = GetHashKey('COMPONENT_m870_SCOPE_04'), r870stock = GetHashKey('COMPONENT_m870_STOCK_01'), r870stockv2 = GetHashKey('COMPONENT_m870_STOCK_02'), r870stockv3 = GetHashKey('COMPONENT_m870_STOCK_03'), r870stockv4 = GetHashKey('COMPONENT_m870_STOCK_04'), r870stockv5 = GetHashKey('COMPONENT_m870_STOCK_05'), r870stockv6 = GetHashKey('COMPONENT_m870_STOCK_06') },
 }
 
 -- ESX
@@ -256,6 +257,98 @@ Citizen.CreateThread(function()
                                 TriggerServerEvent('esx_component:giveBack', 'g17suppressorv7')
                                 ESX.ShowNotification("You've removed your suppressor")
                                 RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.g17suppressorv7)
+								                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870barrel) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870barrel')
+                                ESX.ShowNotification("You've removed your barrel attachment")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870barrel)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870barrelv2) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870barrelv2')
+                                ESX.ShowNotification("You've removed your barrel attachment")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870barrelv2)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870barrelv3) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870barrelv3')
+                                ESX.ShowNotification("You've removed your barrel attachment")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870barrelv3)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870barrelv4) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870barrelv4')
+                                ESX.ShowNotification("You've removed your barrel attachment")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870barrelv4)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870barrelv5) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870barrelv5')
+                                ESX.ShowNotification("You've removed your barrel attachment")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870barrelv5)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870barrelv6) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870barrelv6')
+                                ESX.ShowNotification("You've removed your barrel attachment")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870barrelv6)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870barrelv7) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870barrelv7')
+                                ESX.ShowNotification("You've removed your barrel attachment")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870barrelv7)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870magazine) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870magazine')
+                                ESX.ShowNotification("You've removed your barrel")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870magazine)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870magazinev2) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870magazinev2')
+                                ESX.ShowNotification("You've removed your barrel")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870magazinev2)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870magazinev3) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870magazinev3')
+                                ESX.ShowNotification("You've removed your barrel")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870magazinev3)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870handguard) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870handguard')
+                                ESX.ShowNotification("You've removed your handguard")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870handguard)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870handguardv2) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870handguardv2')
+                                ESX.ShowNotification("You've removed your handguard")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870handguardv2)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870handguardv3) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870handguardv3')
+                                ESX.ShowNotification("You've removed your handguard")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870handguardv3)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870scope) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870scope')
+                                ESX.ShowNotification("You've removed your sight")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870scope)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870scopev2) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870scopev2')
+                                ESX.ShowNotification("You've removed your sight")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870scopev2)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870scopev3) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870scopev3')
+                                ESX.ShowNotification("You've removed your sight")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870scopev3)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870scopev4) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870scopev4')
+                                ESX.ShowNotification("You've removed your sight")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870scopev4)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870stock) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870stock')
+                                ESX.ShowNotification("You've removed your stock")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870stock)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870stockv2) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870stockv2')
+                                ESX.ShowNotification("You've removed your stock")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870stockv2)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870stockv3) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870stockv3')
+                                ESX.ShowNotification("You've removed your stock")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870stockv3)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870stockv4) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870stockv4')
+                                ESX.ShowNotification("You've removed your stock")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870stockv4)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870stockv5) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870stockv5')
+                                ESX.ShowNotification("You've removed your stock")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870stockv5)
+                            elseif HasPedGotWeaponComponent(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870stockv6) then
+                                TriggerServerEvent('esx_components:giveBack', 'r870stockv6')
+                                ESX.ShowNotification("You've removed your stock")
+                                RemoveWeaponComponentFromPed(GetPlayerPed(-1), GetSelectedPedWeapon(PlayerPedId()), v.r870stockv6)
 						end
 					end
 				end
