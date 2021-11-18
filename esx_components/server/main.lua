@@ -344,6 +344,167 @@ ESX.RegisterUsableItem('g17suppressorv7', function( source )
 	xPlayer.removeInventoryItem('g17suppressorv7', 1)
 end)
 
+ESX.RegisterUsableItem('r870barrel', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870barrel')
+	xPlayer.removeInventoryItem('r870barrel', 1)
+end)
+
+ESX.RegisterUsableItem('r870barrelv2', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870barrelv2')
+	xPlayer.removeInventoryItem('r870barrelv2', 1)
+end)
+
+ESX.RegisterUsableItem('r870barrelv3', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870barrelv3')
+	xPlayer.removeInventoryItem('r870barrelv3', 1)
+end)
+
+ESX.RegisterUsableItem('r870barrelv4', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870barrelv4')
+	xPlayer.removeInventoryItem('r870barrelv4', 1)
+end)
+
+ESX.RegisterUsableItem('r870barrelv5', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870barrelv5')
+	xPlayer.removeInventoryItem('r870barrelv5', 1)
+end)
+
+ESX.RegisterUsableItem('r870barrelv6', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870barrelv6')
+	xPlayer.removeInventoryItem('r870barrelv6', 1)
+end)
+
+ESX.RegisterUsableItem('r870barrelv7', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870barrelv7')
+	xPlayer.removeInventoryItem('r870barrelv7', 1)
+end)
+
+ESX.RegisterUsableItem('r870magazine', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870magazine')
+	xPlayer.removeInventoryItem('r870magazine', 1)
+end)
+
+ESX.RegisterUsableItem('r870magazinev2', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870magazinev2')
+	xPlayer.removeInventoryItem('r870magazinev2', 1)
+end)
+
+ESX.RegisterUsableItem('r870magazinev3', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870magazinev3')
+	xPlayer.removeInventoryItem('r870magazinev3', 1)
+end)
+
+ESX.RegisterUsableItem('r870handguard', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870handguard')
+	xPlayer.removeInventoryItem('r870handguard', 1)
+end)
+
+ESX.RegisterUsableItem('r870handguardv2', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870handguardv2')
+	xPlayer.removeInventoryItem('r870handguardv2', 1)
+end)
+
+ESX.RegisterUsableItem('r870handguardv3', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870handguardv3')
+	xPlayer.removeInventoryItem('r870handguardv3', 1)
+end)
+
+ESX.RegisterUsableItem('r870scope', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870scope')
+	xPlayer.removeInventoryItem('r870scope', 1)
+end)
+
+ESX.RegisterUsableItem('r870scopev2', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870scopev2')
+	xPlayer.removeInventoryItem('r870scopev2', 1)
+end)
+
+ESX.RegisterUsableItem('r870scopev3', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870scopev3')
+	xPlayer.removeInventoryItem('r870scopev3', 1)
+end)
+
+ESX.RegisterUsableItem('r870scopev4', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870scopev4')
+	xPlayer.removeInventoryItem('r870scopev4', 1)
+end)
+
+ESX.RegisterUsableItem('r870stock', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870stock')
+	xPlayer.removeInventoryItem('r870stock', 1)
+end)
+
+ESX.RegisterUsableItem('r870stockv2', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870stockv2')
+	xPlayer.removeInventoryItem('r870stockv2', 1)
+end)
+
+ESX.RegisterUsableItem('r870stockv3', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870stockv3')
+	xPlayer.removeInventoryItem('r870stockv3', 1)
+end)
+
+ESX.RegisterUsableItem('r870stockv4', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870stockv4')
+	xPlayer.removeInventoryItem('r870stockv4', 1)
+end)
+
+ESX.RegisterUsableItem('r870stockv5', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870stockv5')
+	xPlayer.removeInventoryItem('r870stockv5', 1)
+end)
+
+ESX.RegisterUsableItem('r870stockv6', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'r870stockv6')
+	xPlayer.removeInventoryItem('r870stockv6', 1)
+end)
+
 -- Return Server Event, leave at bottom I suppose
 RegisterServerEvent('esx_component:giveBack')
 AddEventHandler('esx_component:giveBack', function(item)
