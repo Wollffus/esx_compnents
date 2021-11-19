@@ -1,4 +1,9 @@
 INSERT INTO `items` (`name`, `label`, `weight`, `rare`, `can_remove`) VALUES
+('suppressor', 'Standard Suppressor', 1, 0, 1),
+('flashlight', 'Standard Flashlight', 1, 0, 1),
+('grip', 'Standard Grip', 1, 0, 1),
+('skin', 'Standard Skin', 1, 0, 1),
+('m18suppressor', 'Sig Suppressor', 1, 0, 1),
 ('m18suppressor', 'Sig Suppressor', 1, 0, 1),
 ('m18suppressorv2', 'Sig Suppressor V2', 1, 0, 1),
 ('m18suppressorv3', 'Sig Suppressor V3', 1, 0, 1),
