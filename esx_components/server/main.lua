@@ -3,6 +3,349 @@ local ESX = nil
 TriggerEvent('esx:getSharedObject', function( obj ) ESX = obj end)
 
 -- Add-On Weapon Components
+ESX.RegisterUsableItem('scarscope', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscope')
+	xPlayer.removeInventoryItem('scarscope', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev2', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev2')
+	xPlayer.removeInventoryItem('scarscopev2', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev3', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev3')
+	xPlayer.removeInventoryItem('scarscopev3', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev4', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev4')
+	xPlayer.removeInventoryItem('scarscopev4', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev4', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev4')
+	xPlayer.removeInventoryItem('scarscopev4', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev5', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev5')
+	xPlayer.removeInventoryItem('scarscopev5', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev6', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev6')
+	xPlayer.removeInventoryItem('scarscopev6', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev7', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev7')
+	xPlayer.removeInventoryItem('scarscopev7', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev8', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev8')
+	xPlayer.removeInventoryItem('scarscopev8', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev9', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev9')
+	xPlayer.removeInventoryItem('scarscopev9', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev10', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev10')
+	xPlayer.removeInventoryItem('scarscopev10', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev11', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev11')
+	xPlayer.removeInventoryItem('scarscopev11', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev12', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev12')
+	xPlayer.removeInventoryItem('scarscopev12', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev13', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev13')
+	xPlayer.removeInventoryItem('scarscopev13', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev14', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev14')
+	xPlayer.removeInventoryItem('scarscopev14', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev15', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev15')
+	xPlayer.removeInventoryItem('scarscopev15', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev16', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev16')
+	xPlayer.removeInventoryItem('scarscopev16', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev17', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev17')
+	xPlayer.removeInventoryItem('scarscopev17', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev18', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev18')
+	xPlayer.removeInventoryItem('scarscopev18', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev19', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev19')
+	xPlayer.removeInventoryItem('scarscopev19', 1)
+end)
+
+ESX.RegisterUsableItem('scarscopev20', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarscopev20')
+	xPlayer.removeInventoryItem('scarscopev20', 1)
+end)
+
+ESX.RegisterUsableItem('scarbarrel', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarbarrel')
+	xPlayer.removeInventoryItem('scarbarrel', 1)
+end)
+
+ESX.RegisterUsableItem('scarbarrelv2', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarbarrelv2')
+	xPlayer.removeInventoryItem('scarbarrelv2', 1)
+end)
+
+ESX.RegisterUsableItem('scarbarrelv3', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarbarrelv3')
+	xPlayer.removeInventoryItem('scarbarrelv3', 1)
+end)
+
+ESX.RegisterUsableItem('scarbarrelv4', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarbarrelv4')
+	xPlayer.removeInventoryItem('scarbarrelv4', 1)
+end)
+
+ESX.RegisterUsableItem('scarbarrelv5', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarbarrelv5')
+	xPlayer.removeInventoryItem('scarbarrelv5', 1)
+end)
+
+ESX.RegisterUsableItem('scarbarrelv6', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarbarrelv6')
+	xPlayer.removeInventoryItem('scarbarrelv6', 1)
+end)
+
+ESX.RegisterUsableItem('scarbarrelv7', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarbarrelv7')
+	xPlayer.removeInventoryItem('scarbarrelv7', 1)
+end)
+
+ESX.RegisterUsableItem('scarbarrelv8', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarbarrelv8')
+	xPlayer.removeInventoryItem('scarbarrelv8', 1)
+end)
+
+ESX.RegisterUsableItem('scarbarrelv8', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarbarrelv8')
+	xPlayer.removeInventoryItem('scarbarrelv8', 1)
+end)
+
+ESX.RegisterUsableItem('scarbarrelv9', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarbarrelv9')
+	xPlayer.removeInventoryItem('scarbarrelv9', 1)
+end)
+
+ESX.RegisterUsableItem('scarmagazine', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarmagazine')
+	xPlayer.removeInventoryItem('scarmagazine', 1)
+end)
+
+ESX.RegisterUsableItem('scarmagazinev2', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarmagazinev2')
+	xPlayer.removeInventoryItem('scarmagazinev2', 1)
+end)
+
+ESX.RegisterUsableItem('scarmagazinev3', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarmagazinev3')
+	xPlayer.removeInventoryItem('scarmagazinev3', 1)
+end)
+
+ESX.RegisterUsableItem('scarmagazinev4', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarmagazinev4')
+	xPlayer.removeInventoryItem('scarmagazinev4', 1)
+end)
+
+ESX.RegisterUsableItem('scarmagazinev5', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarmagazinev5')
+	xPlayer.removeInventoryItem('scarmagazinev5', 1)
+end)
+
+ESX.RegisterUsableItem('scarmagazinev6', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarmagazinev6')
+	xPlayer.removeInventoryItem('scarmagazinev6', 1)
+end)
+
+ESX.RegisterUsableItem('scarflashlight', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarflashlight')
+	xPlayer.removeInventoryItem('scarflashlight', 1)
+end)
+
+ESX.RegisterUsableItem('scarflashlightv2', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarflashlightv2')
+	xPlayer.removeInventoryItem('scarflashlightv2', 1)
+end)
+
+ESX.RegisterUsableItem('scarflashlightv3', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarflashlightv3')
+	xPlayer.removeInventoryItem('scarflashlightv3', 1)
+end)
+
+ESX.RegisterUsableItem('scarflashlightv4', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarflashlightv4')
+	xPlayer.removeInventoryItem('scarflashlightv4', 1)
+end)
+
+ESX.RegisterUsableItem('scarflashlightv5', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarflashlightv5')
+	xPlayer.removeInventoryItem('scarflashlightv5', 1)
+end)
+
+ESX.RegisterUsableItem('scarflashlightv6', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarflashlightv6')
+	xPlayer.removeInventoryItem('scarflashlightv6', 1)
+end)
+
+ESX.RegisterUsableItem('scarflashlightv7', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarflashlightv7')
+	xPlayer.removeInventoryItem('scarflashlightv7', 1)
+end)
+
+ESX.RegisterUsableItem('scarflashlightv8', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarflashlightv8')
+	xPlayer.removeInventoryItem('scarflashlightv8', 1)
+end)
+
+ESX.RegisterUsableItem('scarflashlightv9', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarflashlightv9')
+	xPlayer.removeInventoryItem('scarflashlightv9', 1)
+end)
+
+ESX.RegisterUsableItem('scarflashlightv10', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarflashlightv10')
+	xPlayer.removeInventoryItem('scarflashlightv10', 1)
+end)
+
+ESX.RegisterUsableItem('scarframe', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarframe')
+	xPlayer.removeInventoryItem('scarframe', 1)
+end)
+
+ESX.RegisterUsableItem('scarframev2', function( source )
+	local _source  = source
+	local xPlayer  = ESX.GetPlayerFromId(_source)
+    TriggerClientEvent('esx_components:use', source, 'scarframev2')
+	xPlayer.removeInventoryItem('scarframev2', 1)
+end)
+
 ESX.RegisterUsableItem('m18suppressor', function( source )
 	local _source  = source
 	local xPlayer  = ESX.GetPlayerFromId(_source)
