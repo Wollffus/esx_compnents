@@ -2,7 +2,7 @@
 weapon accesories for esx
 
 Modifed to support weapon add on components as well as the standard ones.
-This is set up to support the Sig M18, Military M4A1, SR-25 and the Glock Custom from https://fluffy.tebex.io/category/1908966
+This is set up to support the Sig M18, Military M4A1, SR-25, SCAR 17 and the Glock Custom from https://fluffy.tebex.io/category/1908966
 As well as the M9A3 and m870 from https://www.markomods.com/shop/
 
 1) Import esx_components.sql in your database
