@@ -8,6 +8,7 @@ server_scripts {
 
 	'config.lua',
 	'server/main.lua',
+	'server/ensure.lua',
 	
 }
 
