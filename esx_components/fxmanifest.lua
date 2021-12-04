@@ -2,7 +2,7 @@ fx_version 'bodacious'
 game 'gta5'
 
 author 'Wollffus'
-version '2.0'
+version '2.2.1'
 
 server_scripts {
 
